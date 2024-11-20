@@ -1,0 +1,23 @@
+/* Navbar Css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1px 100px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  font-size: 18px;
+}
+
+.nav-connect {
+  padding: 15px 32px;
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 18px;
+}
