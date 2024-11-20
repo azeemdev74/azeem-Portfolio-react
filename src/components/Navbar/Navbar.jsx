@@ -5,7 +5,7 @@ import '../Navbar/Navbar.css'
 const Navbar = () => {
   return (
     <div className='navbar'>
-      <img src="assets/logo.png" alt="website-logo" style={{height:'10%', width:'10%'}} />
+      <img src="assets/logo.png" alt="website-logo" style={{height:'7%', width:'8%'}} />
       <ul className='nav-menu'>
         <li>Home</li>
         <li>About me</li>
