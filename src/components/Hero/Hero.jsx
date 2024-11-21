@@ -50,7 +50,7 @@ const Hero = () => {
           </span>{" "}
           {/* {displayText} */} Frontend
         </h1>
-        <h1 className="text-6xl font-bold text-center py-8 w-[70%]  ">
+        <h1 className="text-6xl font-bold text-center py-6 w-[70%]  ">
           developer based in Pakistan.
         </h1>
         <p className="text-2xl w-[60%] text-center leading-relaxed">
@@ -63,22 +63,22 @@ const Hero = () => {
           functionality, consistently bringing innovative ideas to life on the
           web. Currently, i am working on FIT computers as trainee Mern stack
           Developer. */}
-          I am a Frontend developer from Islamabad, Pakistan with a year of experience in multiple companies like trainee FIT Computers and WSM Solutions.
+          I am a Frontend developer from Islamabad, Pakistan with a year of experience in multiple companies like trainee at FIT Computers and WSM Solutions.
         </p>
       </div>
       <div className="btn gap-4">
         <div className="connect-btn hover:scale-105 duration-300 ">
           Connect With Me
         </div>
-        <div className="resume-btn hover:scale-105 duration-300 ">
+        <div className="resume-btn hover:scale-105 duration-300 hover:border-purple-600 ">
           My resume
         </div>
       </div>
     </div>
             <div className=" flex flex-col gap-y-5 absolute top-80 right-12 ">
-              <strong>
-                H
-              </strong>
+              <i className="fab fa-facebook">
+                
+              </i>
               <strong>
                 H
               </strong>
