@@ -3,11 +3,12 @@
   display: flex;
   gap: 35px;
   align-items: center;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .about-skills div:hover {
-  transform: scale(10.5s);
+  transform: scale(1.05);
+  transition: 0.3s;
 }
 
 .about-skills div hr {

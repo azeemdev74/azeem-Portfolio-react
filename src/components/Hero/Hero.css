@@ -24,3 +24,15 @@
   cursor: pointer;
   font-size: 18px;
 }
+
+.Social-icons strong {
+  font-size: 28px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.Social-icons strong:hover {
+  transform: scale(1.05);
+  color: #9a1fbc;
+  transition: 0.3s;
+}

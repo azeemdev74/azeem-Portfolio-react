@@ -9,7 +9,7 @@ const About = () => {
       <div className="relative">
         <h1 className="text-6xl font-semibold px-8">About me</h1>
         <img
-          className="absolute bottom-0 right-0 -z-10 w-44"
+          className="absolute bottom-0 right-0 -z-10 w-40"
           src="assets/theme_pattern.svg"
           alt="theme_pattern"
         />
@@ -52,6 +52,10 @@ const About = () => {
             <div>
               <strong>Bootstrap</strong>
               <hr style={{ width: "75%" }} />
+            </div>
+            <div>
+              <strong>Material UI</strong>
+              <hr style={{ width: "78%" }} />
             </div>
             <div>
               <strong>Tailwind CSS</strong>

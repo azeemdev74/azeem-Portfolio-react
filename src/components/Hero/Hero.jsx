@@ -33,7 +33,7 @@ const Hero = () => {
 
   return (
     <div className="relative">
-      <div className="flex flex-col items-center gap-9">
+      <div className="flex flex-col items-center gap-3">
         <img
           className="mt-5"
           src="assets/profile.png"
@@ -67,10 +67,10 @@ const Hero = () => {
       </div>
       {/* // Social icons // */}
       <div className="Social-icons flex flex-col gap-y-8 absolute top-96 right-12  ">
-        <strong className="fab fa-linkedin text-3xl hover:scale-105 duration-300 hover:text-purple-400"></strong>
-        <strong className="fab fa-github text-3xl hover:scale-105 duration-300 hover:text-purple-600"></strong>
-        <strong className="fab fa-twitter text-3xl hover:scale-105 duration-300 hover:text-purple-600"></strong>
-        <strong className="fab fa-facebook text-3xl hover:scale-x-110 duration-300 hover:text-purple-600 "></strong>
+        <strong className="fab fa-linkedin"></strong>
+        <strong className="	fas fa-envelope"></strong>
+        <strong className="fab fa-github "></strong>
+        <strong className="fab fa-facebook"></strong>
       </div>
     </div>
   );
