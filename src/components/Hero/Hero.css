@@ -1,0 +1,27 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  display: flex;
+}
+
+.connect-btn {
+  padding: 13px 30px;
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+.resume-btn {
+  padding: 13px 30px;
+  border: 2px white solid;
+
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 18px;
+}
