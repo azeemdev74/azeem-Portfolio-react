@@ -1,0 +1,20 @@
+/* // About Section  */
+.about-skills div {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.about-skills div:hover {
+  transform: scale(10.5s);
+}
+
+.about-skills div hr {
+  outline: none;
+  border: none;
+  width: 50%;
+  height: 8px;
+  border-radius: 50px;
+  background: linear-gradient(264deg, #df8908 -5.09%, #b515ff 106.28%);
+}

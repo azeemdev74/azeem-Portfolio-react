@@ -50,7 +50,7 @@ const Hero = () => {
           <h1 className="text-6xl font-bold text-center py-6 w-[70%]  ">
             developer based in Pakistan.
           </h1>
-          <p className="text-2xl w-[60%] text-center leading-relaxed">
+          <p className="text-2xl w-[60%] text-center leading-relaxed text-gray-300">
             I am a Frontend developer from Islamabad, Pakistan with a year of
             experience in multiple companies like trainee at FIT Computers and
             WSM Solutions.

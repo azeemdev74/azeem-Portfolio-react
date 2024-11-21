@@ -1,9 +1,10 @@
 import React from "react";
+import '../About/About.css'
 
 const About = () => {
   return (
     // about-section
-    <div className=" flex flex-col justify-center items-center gap-8 mx-36 my-36 ">
+    <div className=" flex flex-col justify-center items-center gap-8 mx-36 my-24 ">
       {/* Title of about section */}
       <div className="relative">
         <h1 className="text-6xl font-semibold px-8">About me</h1>
@@ -14,7 +15,7 @@ const About = () => {
         />
       </div>
       {/* /// */}
-      <div className="flex gap-14 ">
+      <div className="flex gap-14 pt-8">
         {/* left side of about section  */}
         <div className="flex">
           <img
@@ -26,7 +27,7 @@ const About = () => {
         {/* //// right side //// */}
         <div className="flex flex-col gap-14">
           {/* right side of about section  */}
-          <div className="flex flex-col text-xl gap-6">
+          <div className="flex flex-col text-xl gap-4 text-gray-300 ">
             <p>
               As a dedicated MERN Stack Developer with a year of focused
               experience, I excel in crafting seamless, high-performance web
@@ -43,7 +44,7 @@ const About = () => {
             </p>
           </div>
           {/* Skill section  */}
-          <div>
+          <div className=" about-skills flex flex-col gap-5 text-xl">
             <div>
               <strong>HTML & CSS</strong>
               <hr style={{ width: "70%" }} />
