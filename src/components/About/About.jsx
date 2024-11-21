@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     // about-section
-    <div className=" flex flex-col justify-center items-center gap-8 mx-40 my-32 ">
+    <div className=" flex flex-col justify-center items-center gap-8 mx-36 my-36 ">
       {/* Title of about section */}
       <div className="relative">
         <h1 className="text-6xl font-semibold px-8">About me</h1>
@@ -20,13 +20,13 @@ const About = () => {
           <img
             src="assets/profile_img3.png"
             alt="profile photo"
-            className="w-96 rounded-md hover:scale-105 duration-300 hover:border-purple-600 cursor-pointer"
+            className="w-auto rounded-md hover:scale-105 duration-300 hover:border-purple-600 cursor-pointer"
           />
         </div>
         {/* //// right side //// */}
         <div className="flex flex-col gap-14">
           {/* right side of about section  */}
-          <div>
+          <div className="flex flex-col text-xl gap-6">
             <p>
               As a dedicated MERN Stack Developer with a year of focused
               experience, I excel in crafting seamless, high-performance web
