@@ -1,0 +1,8 @@
+.lng-section div{
+    display: flex;
+    align-items: center;
+   border: 2px white solid;
+   border-radius: 30px;
+    padding: 4px 10px;
+    cursor: pointer;
+}

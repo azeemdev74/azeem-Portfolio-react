@@ -1,0 +1,10 @@
+.service-data {
+  transition: 0.5s;
+}
+
+.service-data:hover {
+  transform: scale(1.05);
+  transition: 0.4s;
+  box-shadow: 0px 5px 20px #ff00ff;
+  /* background: linear-gradient(45deg, #3f0028, #582300); */
+}
