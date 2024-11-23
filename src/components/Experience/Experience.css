@@ -1,8 +1,24 @@
-.lng-section div{
+.lng-section span{
     display: flex;
     align-items: center;
-   border: 2px white solid;
-   border-radius: 30px;
-    padding: 4px 10px;
+    /* background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%); */
+    /* color: transparent;
+    background-clip: text; */
+    /* border: 2px white solid;
+    border-radius: 30px;
+    padding: 4px 10px; */
     cursor: pointer;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.project-card{
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+.project-card:hover{
+    transform: scale(1.05);
+    transition: 0.4 s;
+    box-shadow: 0 4px 20px #ff00ff;
 }

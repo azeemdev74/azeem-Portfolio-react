@@ -1,5 +1,6 @@
 import React from "react";
 import "../Experience/Experience.css";
+import mywork_data from "./mywork_data";
 
 const Experience = () => {
   return (
@@ -14,26 +15,32 @@ const Experience = () => {
         />
       </div>
       {/* // Project cards //  */}
-      <div className="project-card flex justify-center gap-3">
-        <div className="border-2 border-red-500">
-          <img src="assets/project_1.svg" alt="" />
-          {/* // details part of card // */}
-          <div>
-            <h1 className="text-2xl font-bold pt-8 px-3">Project Title</h1>
-            <p className="pt-3 px-3">Project descriptions....</p>
-            {/* // language use section /// */}
-            <div className="lng-section flex gap-8 justify-center items-center py-8">
-              <div>HTML</div>
-              <div>CSS</div>
-              <div>JavaScript</div>
-            </div>
-            {/* // github link // */}
-            <div className="flex items-center gap-2">
-              <i className="fab fa-github"></i>
-              <span>View On Github</span>
-            </div>
-          </div>
-        </div>
+      <div className=" grid grid-cols-3 justify-center gap-10 py-12">
+        {
+            mywork_data.map((val)=>{
+                return <div className=" project-card rounded-xl border- border-white ">
+                <img src={val.w_img} alt="" />
+                {/* // details part of card // */}
+                <div className="px-3 ">
+                  <h1 className="text-2xl font-bold pt-8">{val.w_title}</h1>
+                  <p className="pt-3">{val.w_desc}</p>
+                  {/* // language use section /// */}
+                  {/* <div className="lng-section flex gap-8 justify-center items-center py-8">
+                    <span>React</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                  </div> */}
+                  {/* // github link // */}
+                  <a href="#">
+                  <div className="inline-block items-center my-4 py-3 px-6 rounded-full uppercase bg-gradient-to-r from-[#b923e1] to-[#da7c25] tracking-wide transition-transform duration-200 ease-in-out  hover:translate-y-[-3px]  ">
+                    <i className="fab fa-github"></i>
+                    <span className="text-sm font-bold pl-1">View On Github</span>
+                  </div>
+                  </a>
+                </div>
+              </div>
+            })
+        }
       </div>
     </div>
   );
