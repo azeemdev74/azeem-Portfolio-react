@@ -15,12 +15,16 @@ const Services = () => {
           alt="theme_pattern"
         />
       </div>
-     <div className="service-container flex gap-6 pt-12 ">
+     <div className="service-container grid grid-cols-3 gap-12 pt-12 mx-36 mb-20">
      {serviceData.map((val,index)=>{
-        return <div key={index} className="flex flex-col justify-center border-2 border-solid rounded p-7 gap-2 cursor-pointer ">
+        return <div key={index} className="flex flex-col justify-center border-2 border-solid rounded-2xl p-8 gap-2 cursor-pointer  hover:border-[#ff00ff] hover:border-2 ">
             <h1 className='text-2xl font-bold'>{`0${index+1}`}</h1>
-            <h2>{val.s_name}</h2>
-            <p>{val.s_desc}</p>
+            <h2 className='text-2xl font-semibold bg-gradient-to-r from-[#b923e1] to-[#da7c25] text-transparent bg-clip-text'>{val.s_name}</h2>
+            <p className='text-gray-200 leading-8 max-w-xs'>{val.s_desc}</p>
+            <div className="readmore-btn flex gap-3 items-center mt-5">
+              <h1 className='text-base max-w-72 font-light '>Read More</h1>
+              <img src="assets/arrow_icon.svg" alt="arrow-icon" className='w-5' />
+            </div>
         </div>
       })}
      </div>

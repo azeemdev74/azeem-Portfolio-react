@@ -45,9 +45,9 @@ const Hero = () => {
             <span className="bg-gradient-to-r from-[#b923e1] to-[#da7c25] text-transparent bg-clip-text">
               I'm Muhammad Azeem,
             </span>{" "}
-            {/* {displayText} */} Frontend
+            {/* {displayText}  */} Frontend
           </h1>
-          <h1 className="text-6xl font-bold text-center py-6 w-[70%]  ">
+          <h1 className="text-6xl font-bold text-center py-3 w-[70%]  ">
             developer based in Pakistan.
           </h1>
           <p className="text-2xl w-[60%] text-center leading-relaxed text-gray-300">
@@ -56,9 +56,9 @@ const Hero = () => {
             WSM Solutions.
           </p>
         </div>
-        <div className="btn gap-4">
+        <div className="btn gap-6 pt-4 flex justify-center items-center">
           <div className="connect-btn hover:scale-105 duration-300 ">
-            Connect With Me
+            Get In Touch
           </div>
           <div className="resume-btn hover:scale-105 duration-300 hover:border-purple-600 ">
             My resume

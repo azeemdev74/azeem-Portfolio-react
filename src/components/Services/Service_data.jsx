@@ -1,7 +1,7 @@
 const serviceData=[
     {
         s_name:'Web Design',
-        s_desc:'Web design is the art of creating visually appealing, user-friendly, and responsive websites...'
+        s_desc:'Web design is the art of creating user-friendly, and responsive websites...'
     },
     {
         s_name:'Full-Stack Web Development',
