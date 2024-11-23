@@ -4,7 +4,7 @@ import '../Navbar/Navbar.css'
 
 const Navbar = () => {
   return (
-    <div className='flex justify-between items-center px-10 pt-3'>
+    <div className='flex justify-between items-center px-12 pt-3'>
        <div className="relative">
         <h1 className="text-4xl font-semibold px-8">Azeem</h1>
         <img
