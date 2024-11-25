@@ -19,7 +19,7 @@ const Experience = () => {
         {
             mywork_data.map((val)=>{
                 return <div className=" project-card rounded-xl ">
-                <img src={val.w_img} alt="" />
+                <img className="rounded-xl" src={val.w_img} alt="" style={{height:'240px', width:'418px'}}/>
                 {/* // details part of card // */}
                 <div className="px-3 ">
                   <h1 className="text-2xl font-bold pt-8">{val.w_title}</h1>
@@ -33,7 +33,7 @@ const Experience = () => {
                   
                   {/* // github link // */}
                   <a href="#">
-                  <div className="inline-block items-center my-4 py-3 px-6 rounded-full uppercase bg-gradient-to-r from-[#b923e1] to-[#da7c25] tracking-wide transition-transform duration-200 ease-in-out  hover:translate-y-[-3px]  ">
+                  <div className="inline-block items-center my-4 py-3 px-6  rounded-full uppercase bg-gradient-to-r from-[#b923e1] to-[#da7c25] tracking-wide transition-transform duration-200 ease-in-out  hover:translate-y-[-3px]  ">
                     <i className="fab fa-github"></i>
                     <span className="text-sm font-bold pl-1">View On Github</span>
                   </div>

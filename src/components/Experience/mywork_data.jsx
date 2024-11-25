@@ -1,6 +1,12 @@
 
 const mywork_data = [
     {
+        w_title:"Portfolio Website",
+        w_desc:'Developed a sleek portfolio website showcasing projects, skills, and experience with a clean, responsive design.',
+        w_gitUrl:'',
+        w_img:'assets/portfolio_project.png'
+    },
+    {
         w_title:"Movies Website",
         w_desc:'Developed a movie search website using the OMDb API, allowing users to explore and discover movie details effortlessly.',
         w_gitUrl:'',
@@ -19,25 +25,20 @@ const mywork_data = [
         w_gitUrl:'',
         w_img:'assets/todo_project.png'
     },
-    {
-        w_title:"Portfolio Website",
-        w_desc:'Developed a sleek portfolio website showcasing projects, skills, and experience with a clean, responsive design.',
-        w_gitUrl:'',
-        w_img:'assets/portfolio_project.png'
-    },
+  
     {
         w_title:"Youtube to Mp3 Converter",
         w_desc:'Created an efficient YouTube to MP3 converter with a user-friendly interface, offering quick and reliable conversions with a sleek design.',
         w_gitUrl:'',
         w_img:'assets/mp3converter_project.png'
     },
-    // {
-    //     w_title:"Web design",
-    //     w_desc:'',
-    //     w_gitUrl:'',
-    //     w_img:'assets/project_6.svg'
+    {
+        w_title:"Web design",
+        w_desc:'',
+        w_gitUrl:'',
+        w_img:'assets/project_6.svg'
 
-    // },
+    },
 ]
  
 export default mywork_data;
