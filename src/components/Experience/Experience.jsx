@@ -4,7 +4,7 @@ import mywork_data from "./mywork_data";
 
 const Experience = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-8 mx-36 my-10">
+    <div className="flex flex-col justify-center items-center gap-8 mx-36 my-7">
       {/* // My experience section heading // */}
       <div className="relative">
         <h1 className="text-6xl font-semibold px-8">My latest work</h1>

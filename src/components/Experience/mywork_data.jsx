@@ -32,13 +32,13 @@ const mywork_data = [
         w_gitUrl:'',
         w_img:'assets/mp3converter_project.png'
     },
-    {
-        w_title:"Web design",
-        w_desc:'',
-        w_gitUrl:'',
-        w_img:'assets/project_6.svg'
+    // {
+    //     w_title:"Web design",
+    //     w_desc:'',
+    //     w_gitUrl:'',
+    //     w_img:'assets/project_6.svg'
 
-    },
+    // },
 ]
  
 export default mywork_data;
