@@ -45,7 +45,22 @@ const Contact = () => {
             </div>
             )
            }
-      
+        </div>
+
+        {/* Conatct section right side */}
+
+        <div className="contact-right">
+          <form >
+            <label >Your name</label>
+            <input type="text" placeholder='Enter your name'/>
+            <label >Your Email</label>
+            <input type="text" placeholder='Enter your name'/>
+            <label >Write your message here</label>
+            <textarea name="" id="">
+              
+            </textarea>
+            
+          </form>
         </div>
 
     </div>
