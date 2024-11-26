@@ -32,12 +32,12 @@ const Experience = () => {
                   </div> */}
                   
                   {/* // github link // */}
-                  <a href="#">
+                  
                   <div className="inline-block items-center my-4 py-3 px-6  rounded-full uppercase bg-gradient-to-r from-[#b923e1] to-[#da7c25] tracking-wide transition-transform duration-200 ease-in-out  hover:translate-y-[-3px]  ">
                     <i className="fab fa-github"></i>
                     <span className="text-sm font-bold pl-1">View On Github</span>
                   </div>
-                  </a>
+                
                 </div>
               </div>
             })
