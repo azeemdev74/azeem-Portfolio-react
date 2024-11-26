@@ -20,7 +20,7 @@ const Contact = () => {
         },
     ]
   return (
-    <div className='contact-section flex flex-col justify-center items-center gap-14'>
+    <div className='contact-section flex flex-col justify-center items-center gap-20 mx-44 my-20'>
         {/* // heading of contact section // */}
 
       <div className="relative">
@@ -32,15 +32,15 @@ const Contact = () => {
         />
       </div>
       {/* data of contact section  */}
-    <div className=''>
+    <div className='flex gap-40 '>
         {/* // left side of contact us section // */}
-        <div className="contact-left">
-            <h1>Let's Talk</h1>
+        <div className="contact-left flex flex-col gap-8">
+            <h6 className='text-[35px] font-bold '>Let's Talk</h6>
             <small>I'm currently avaliable to take on new projects, so feel free to send me a message about anything that you want me to work on. You can contact anytime.</small>
            {
             details.map((val)=>
-                <div className='flex'>
-                <img className='w-6' src={val.d_icon} alt="icons-name" />
+                <div className='flex gap-1 items-center'>
+                <img className='w-5' src={val.d_icon} alt="icons-name" />
                 <span>{val.d_title}</span>
             </div>
             )
@@ -49,16 +49,18 @@ const Contact = () => {
 
         {/* Conatct section right side */}
 
-        <div className="contact-right">
+        <div className="contact-right flex flex-col justify-center items-center">
           <form >
             <label >Your name</label>
             <input type="text" placeholder='Enter your name'/>
             <label >Your Email</label>
-            <input type="text" placeholder='Enter your name'/>
+            <input type="text" placeholder='Enter your mail'/>
             <label >Write your message here</label>
-            <textarea name="" id="">
-              
+            <textarea name="message" rows='8' placeholder='Enter your message'>
             </textarea>
+            <button type='submit'>
+              Submit now
+            </button>
             
           </form>
         </div>

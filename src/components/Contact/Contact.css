@@ -1,0 +1,6 @@
+.contact-left h6 {
+  background: linear-gradient(270deg, #df8909 80%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
