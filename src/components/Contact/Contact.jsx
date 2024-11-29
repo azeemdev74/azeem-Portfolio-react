@@ -51,16 +51,7 @@ const Contact = () => {
 
         <div className="contact-right flex flex-col justify-center items-start">
          
-            <label >Your name</label>
-            <input type="text" placeholder='Enter your name'/>
-            <label >Your Email</label>
-            <input type="text" placeholder='Enter your mail'/>
-            <label >Write your message here</label>
-            <textarea name="message" rows='8' placeholder='Enter your message'>
-            </textarea>
-            <button type='submit'>
-              Submit now
-            </button>
+           
             
         </div>
 
