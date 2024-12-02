@@ -51,15 +51,15 @@ const Contact = () => {
 
         <div className="contact-right flex flex-col justify-center items-start">
          
-        <label >Your name</label>
+            <label >Your name</label>
             <input type="text" placeholder='Enter your name'/>
             <label >Your Email</label>
             <input type="text" placeholder='Enter your mail'/>
             <label >Write your message here</label>
             <textarea name="message" rows='8' placeholder='Enter your message'>
             </textarea>
-            <button type='submit'>
-              Submit now
+            <button type='submit' className='text-lg px-6 py-3 mt-4 cursor-pointer rounded-full'>
+              Submit Now
             </button>
             
         </div>
