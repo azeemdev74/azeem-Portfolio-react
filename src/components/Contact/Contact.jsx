@@ -32,7 +32,7 @@ const Contact = () => {
         />
       </div>
       {/* data of contact section  */}
-    <div className='flex gap-40 '>
+    <div className='flex gap-80 '>
         {/* // left side of contact us section // */}
         <div className="contact-left flex flex-col gap-7">
             <h6 className='text-5xl font-bold '>Let's Talk</h6>
