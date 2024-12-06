@@ -45,7 +45,7 @@ const Hero = () => {
             <span className="bg-gradient-to-r from-[#b923e1] to-[#da7c25] text-transparent bg-clip-text">
               I'm Muhammad Azeem,
             </span>{" "}
-            {/* {displayText}  */} Frontend
+            {/* {displayText}   */} Frontend
           </h1>
           <h1 className="text-6xl font-bold text-center py-3 w-[70%]  ">
             developer based in Pakistan.
