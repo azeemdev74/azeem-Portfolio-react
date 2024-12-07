@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import  '../Contact/Contact.css'
 
 const Contact = () => {
@@ -21,24 +21,24 @@ const Contact = () => {
     ];
     const onSubmit = async (event) => {
       event.preventDefault();
-      setResult("Sending....");
       const formData = new FormData(event.target);
   
       formData.append("access_key", "50435694-baf3-4969-b6c6-49aac3f67aa7");
   
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+  
+      const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        body: formData
-      });
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: json
+      }).then((res) => res.json());
   
-      const data = await response.json();
-  
-      if (data.success) {
-        setResult("Form Submitted Successfully");
-        event.target.reset();
-      } else {
-        console.log("Error", data);
-        setResult(data.message);
+      if (res.success) {
+        console.log("Success", res);
       }
     };
   return (
@@ -72,19 +72,18 @@ const Contact = () => {
         {/* Contact section right side */}
 
         <div className="contact-right flex flex-col justify-center items-start">
-         
-            <form onSubmit={onSubmit}>
+          <form onSubmit={onSubmit}>
             <label >Your name</label>
-            <input type="text" placeholder='Enter your name'/>
+            <input name='Name' type="text" placeholder='Enter your name'required/>
             <label >Your Email</label>
-            <input type="text" placeholder='Enter your mail'/>
+            <input name='Email' type="email" placeholder='Enter your mail'required/>
             <label >Write your message here</label>
-            <textarea name="message" rows='8' placeholder='Enter your message'>
+            <textarea name="message" rows='8' placeholder='Enter your message' required>
             </textarea>
             <button type='submit' className='text-lg px-6 py-3 mt-4 cursor-pointer rounded-full'>
               Submit Now
             </button>
-            </form>
+          </form>
             
         </div>
 
