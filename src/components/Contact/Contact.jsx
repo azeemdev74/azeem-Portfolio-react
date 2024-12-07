@@ -78,7 +78,7 @@ const Contact = () => {
             <label >Your Email</label>
             <input name='Email' type="email" placeholder='Enter your mail'required/>
             <label >Write your message here</label>
-            <textarea name="message" rows='8' placeholder='Enter your message' required>
+            <textarea name="Message" rows='8' placeholder='Enter your message' required>
             </textarea>
             <button type='submit' className='text-lg px-6 py-3 mt-4 cursor-pointer rounded-full'>
               Submit Now
