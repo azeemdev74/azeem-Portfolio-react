@@ -33,6 +33,5 @@
 
 .Social-icons strong:hover {
   transform: scale(1.05);
-  color: #ff00ff;
   transition: 0.3s;
 }

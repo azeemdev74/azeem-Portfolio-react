@@ -4,7 +4,7 @@ import '../About/About.css'
 const About = () => {
   return (
     // about-section
-    <div className=" flex flex-col justify-center items-center gap-8 mx-36 my-24 ">
+    <div id="about" className=" flex flex-col justify-center items-center gap-8 mx-36 my-24 ">
       {/* Title of about section */}
       <div className="relative">
         <h1 className="text-6xl font-semibold px-8">About me</h1>

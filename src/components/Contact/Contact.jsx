@@ -20,7 +20,7 @@ const Contact = () => {
         },
     ]
   return (
-    <div className='contact-section flex flex-col justify-center items-center gap-20 mx-44 my-20'>
+    <div id='contact' className='contact-section flex flex-col justify-center items-center gap-20 mx-44 my-20'>
         {/* // heading of contact section // */}
 
       <div className="relative">

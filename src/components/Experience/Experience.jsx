@@ -4,7 +4,7 @@ import mywork_data from "./mywork_data";
 
 const Experience = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-8 mx-36 my-7">
+    <div id="portfolio" className="flex flex-col justify-center items-center gap-8 mx-36 my-7">
       {/* // My experience section heading // */}
       <div className="relative">
         <h1 className="text-6xl font-semibold px-8">My latest work</h1>
@@ -21,9 +21,11 @@ const Experience = () => {
                 return <div className=" project-card rounded-xl ">
                 <img className="rounded-xl" src={val.w_img} alt="" style={{height:'240px', width:'418px'}}/>
                 {/* // details part of card // */}
-                <div className="px-3 ">
+                <div className="px-3 flex flex-col justify-between items-start h-[40vh] ">
+                  <div>
                   <h1 className="text-2xl font-bold pt-8">{val.w_title}</h1>
                   <p className="pt-3 text-gray-300">{val.w_desc}</p>
+                  </div>
                   {/* // language use section /// */}
                   {/* <div className="lng-section flex gap-8 justify-center items-center py-8">
                     <span>React</span>

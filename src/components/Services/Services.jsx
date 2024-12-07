@@ -5,7 +5,7 @@ import serviceData from './Service_data'
 const Services = () => {
 
   return (
-    <div className='services flex flex-col justify-center items-center'>
+    <div id='service' className='services flex flex-col justify-center items-center'>
      {/* // title of services section// */}
 
      <div className="relative">

@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "../Hero/Hero.css";
+import ScrollContext from "../../Context/ScrollContext";
 
 const Hero = () => {
   const names = ["MERN Stack", "Full Stack", "Frontend"];
@@ -7,6 +8,11 @@ const Hero = () => {
   const [displayText, setDisplayText] = useState("");
   const [nameIndex, setNameIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+  
+  const {scrollToSection}=useContext(ScrollContext)
+
+
+  
 
   useEffect(() => {
     const animateText = () => {
@@ -32,8 +38,8 @@ const Hero = () => {
   }, [displayText, nameIndex, isDeleting]);
 
   return (
-    <div className="relative">
-      <div className="flex flex-col items-center gap-3">
+    <div id="home" className="relative">
+      <div className="flex flex-col items-center gap-3 pt-20">
         <img
           className="mt-5"
           src="assets/profile.png"
@@ -41,23 +47,23 @@ const Hero = () => {
           style={{ height: "20%", width: "20%" }}
         />
         <div className="flex flex-col items-center">
-          <h1 className="text-6xl font-bold text-center w-[70%]  ">
+          <h1 className="text-5xl font-bold text-center w-[70%]  ">
             <span className="bg-gradient-to-r from-[#b923e1] to-[#da7c25] text-transparent bg-clip-text">
               I'm Muhammad Azeem,
             </span>{" "}
-            {/* {displayText}   */} Frontend
+            {displayText}   
           </h1>
-          <h1 className="text-6xl font-bold text-center py-3 w-[70%]  ">
+          <h1 className="text-5xl font-bold text-center py-3 w-[70%]  ">
             developer based in Pakistan.
           </h1>
-          <p className="text-2xl w-[60%] text-center leading-relaxed text-gray-300">
+          <p className="text-xl w-[60%] text-center leading-relaxed text-gray-300">
             I am a Frontend developer from Islamabad, Pakistan with a year of
             experience in multiple companies like trainee at FIT Computers and
             WSM Solutions.
           </p>
         </div>
         <div className="btn gap-6 pt-4 flex justify-center items-center">
-          <div className="connect-btn hover:scale-105 duration-300 ">
+          <div onClick={()=>{scrollToSection('contact')}} className="connect-btn hover:scale-105 duration-300 ">
             Get In Touch
           </div>
           <div className="resume-btn hover:scale-105 duration-300 hover:border-purple-600 ">
