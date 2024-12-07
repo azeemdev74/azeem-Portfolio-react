@@ -18,7 +18,29 @@ const Contact = () => {
             d_title:'Islamabad,PK'
 
         },
-    ]
+    ];
+    const onSubmit = async (event) => {
+      event.preventDefault();
+      setResult("Sending....");
+      const formData = new FormData(event.target);
+  
+      formData.append("access_key", "50435694-baf3-4969-b6c6-49aac3f67aa7");
+  
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+  
+      const data = await response.json();
+  
+      if (data.success) {
+        setResult("Form Submitted Successfully");
+        event.target.reset();
+      } else {
+        console.log("Error", data);
+        setResult(data.message);
+      }
+    };
   return (
     <div id='contact' className='contact-section flex flex-col justify-center items-center gap-20 mx-44 my-20'>
         {/* // heading of contact section // */}
@@ -47,10 +69,11 @@ const Contact = () => {
            }
         </div>
 
-        {/* Conatct section right side */}
+        {/* Contact section right side */}
 
         <div className="contact-right flex flex-col justify-center items-start">
          
+            <form onSubmit={onSubmit}>
             <label >Your name</label>
             <input type="text" placeholder='Enter your name'/>
             <label >Your Email</label>
@@ -61,6 +84,7 @@ const Contact = () => {
             <button type='submit' className='text-lg px-6 py-3 mt-4 cursor-pointer rounded-full'>
               Submit Now
             </button>
+            </form>
             
         </div>
 
