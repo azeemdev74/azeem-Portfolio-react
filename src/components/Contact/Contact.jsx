@@ -19,15 +19,17 @@ const Contact = () => {
 
         },
     ];
+    const [loading, setLoading] = useState(false); 
     const onSubmit = async (event) => {
       event.preventDefault();
+      setLoading(true)
       const formData = new FormData(event.target);
   
       formData.append("access_key", "50435694-baf3-4969-b6c6-49aac3f67aa7");
   
       const object = Object.fromEntries(formData);
       const json = JSON.stringify(object);
-  
+      try{
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: {
@@ -39,7 +41,15 @@ const Contact = () => {
   
       if (res.success) {
         console.log("Success", res);
+        event.target.reset(); 
+      } else {
+        console.error("Error:", res);
       }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    } finally {
+      setLoading(false); // Stop loading
+    }
     };
   return (
     <div id='contact' className='contact-section flex flex-col justify-center items-center gap-20 mx-44 my-20'>
@@ -80,8 +90,10 @@ const Contact = () => {
             <label >Write your message here</label>
             <textarea name="Message" rows='8' placeholder='Enter your message' required>
             </textarea>
-            <button type='submit' className='text-lg px-6 py-3 mt-4 cursor-pointer rounded-full'>
-              Submit Now
+            <button type='submit' disabled={loading} className='text-lg px-6 py-3 mt-4 cursor-pointer rounded-full'>
+             {
+              loading ? 'Submitting...': ' Submit Now'
+             }
             </button>
           </form>
             
