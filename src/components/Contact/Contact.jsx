@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import  '../Contact/Contact.css'
+import { toast } from 'react-toastify';
 
 const Contact = () => {
     const details=[
@@ -40,8 +41,16 @@ const Contact = () => {
       }).then((res) => res.json());
   
       if (res.success) {
+        
         console.log("Success", res);
+        // window.alert(res.message)
         event.target.reset(); 
+        toast(res.message,{
+          position: 'bottom-right',
+          closeButton: true,
+          theme: 'dark',
+          type: 'success'
+        })
       } else {
         console.error("Error:", res);
       }
@@ -106,3 +115,4 @@ const Contact = () => {
 }
 
 export default Contact
+

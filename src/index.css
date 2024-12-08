@@ -9,7 +9,8 @@
 
 body {
   height: 100vh;
-  background-color: #161513;
+  
+  /* background-color: #161513; */
   color: white;
   font-family: "Outfit", sans-serif;
   /* font-optical-sizing: auto;

@@ -1,12 +1,63 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import '../Navbar/Navbar.css'
 import ScrollContext from '../../Context/ScrollContext'
 
 
 const Navbar = () => {
+  // const [darkMode, setDarkMode] = useState(false)
   const [menu, setMenu] = useState("home")
 
   const {scrollToSection}=useContext(ScrollContext)
+// useEffect(() => {
+//   document.body.classList.toggle("dark");
+ 
+//   // if (darkMode===false) {
+   
+//   //   document.documentElement.classList.remove('dark')
+//   //  }else{
+//   //   document.documentElement.classList.add('dark')
+    
+//   //  }
+
+  
+// }, [darkMode])
+const [theme, setTheme] = useState(false);
+  useEffect(() => {
+    const setSystemTheme = () => {
+      if (theme === "default") {
+        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          document.documentElement.classList.add("CovertableImages");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      }
+    };
+
+    setSystemTheme();
+
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    mediaQuery.addEventListener("change", setSystemTheme);
+
+    return () => {
+      mediaQuery.removeEventListener("change", setSystemTheme);
+    };
+  }, [theme]);
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else if (theme === "light") {
+      document.documentElement.classList.remove("dark");
+    } else if (theme === "default") {
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    }
+  }, [theme]);
+
+ 
 
 // const scrollToSection=(id)=>{
   
@@ -20,7 +71,7 @@ const Navbar = () => {
 // }
 
   return (
-    <div className='flex justify-between items-center px-12 py-3 fixed mx-auto w-full bg-[#161513] z-10'>
+    <div className='flex justify-between items-center px-12 py-3 fixed mx-auto w-full dark:bg-[#161513] text-black dark:text-white bg-white z-10'>
        {/* <div className="relative">
         <h1 className="text-4xl font-semibold px-8">Azeem</h1>
         <img
@@ -51,6 +102,12 @@ const Navbar = () => {
         setMenu('contact')
       }}} className="nav-connect ">
         Connect With Me
+      </div>
+      <div className=' text-2xl '>
+       {theme==='light' ?<i onClick={()=>setTheme('dark')} className='fa fa-moon cursor-pointer'></i>:
+       <i onClick={()=>setTheme('light')} className='fa fa-sun cursor-pointer'></i>}
+        
+        
       </div>
     </div>
   )
