@@ -81,12 +81,12 @@ const Contact = () => {
 
         {/* Contact section right side */}
 
-        <div className="contact-right flex flex-col justify-center items-start">
-          <form onSubmit={onSubmit}>
+        <div className="contact-right">
+          <form className='contact-form flex flex-col justify-center items-start' onSubmit={onSubmit}>
             <label >Your name</label>
-            <input name='Name' type="text" placeholder='Enter your name'required/>
+            <input name='Name' type="text" placeholder='Enter your name' required/>
             <label >Your Email</label>
-            <input name='Email' type="email" placeholder='Enter your mail'required/>
+            <input name='Email' type="email" placeholder='Enter your mail' required/>
             <label >Write your message here</label>
             <textarea name="Message" rows='8' placeholder='Enter your message' required>
             </textarea>
@@ -95,8 +95,9 @@ const Contact = () => {
               loading ? 'Submitting...': ' Submit Now'
              }
             </button>
-          </form>
             
+          </form>
+          
         </div>
 
     </div>

@@ -5,19 +5,19 @@
   -webkit-text-fill-color: transparent;
 }
 
-.contact-right input,
-.contact-right textarea {
+.contact-form input,
+.contact-form textarea {
   width: 27vw;
   padding: 15px 0 15px 12px;
   background-color: #32323c;
   border-radius: 4px;
   font-family: outfit;
 }
-.contact-right label {
+.contact-form label {
   padding: 10px 0;
   color: #d8d8d8;
   font-size: 16px;
 }
-.contact-right button {
+.contact-form button {
   background: linear-gradient(264deg, #df8909 -5.09%, #b415ff 106.2%);
 }

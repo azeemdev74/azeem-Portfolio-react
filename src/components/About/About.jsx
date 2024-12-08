@@ -4,7 +4,7 @@ import '../About/About.css'
 const About = () => {
   return (
     // about-section
-    <div id="about" className=" flex flex-col justify-center items-center gap-8 mx-36 my-24 ">
+    <div id="about" className=" flex flex-col justify-center items-center gap-8 px-36 py-12">
       {/* Title of about section */}
       <div className="relative">
         <h1 className="text-6xl font-semibold px-8">About me</h1>
@@ -15,19 +15,19 @@ const About = () => {
         />
       </div>
       {/* /// */}
-      <div className="flex gap-14 pt-8">
-        {/* left side of about section  */}
+      <div className="flex items-center gap-14 pt-8">
+        {/* left side of about section (image)  */}
         <div className="flex">
           <img
             src="assets/profile_img3.png"
             alt="profile photo"
-            className="w-auto rounded-md hover:scale-105 duration-300 hover:border-purple-600 cursor-pointer"
+            className="h-[75vh] w-[75vw] rounded-md hover:scale-105 duration-300 hover:border-purple-600 cursor-pointer"
           />
         </div>
         {/* //// right side //// */}
-        <div className="flex flex-col gap-14">
-          {/* right side of about section  */}
-          <div className="flex flex-col text-xl gap-4 text-gray-300 ">
+        <div className="flex flex-col gap-12">
+          {/* right side of about section (description)  */}
+          <div className="flex flex-col text-base sm:text-lg gap-4 text-gray-300 leading-relaxed">
             <p>
               As a dedicated MERN Stack Developer with a year of focused
               experience, I excel in crafting seamless, high-performance web
@@ -44,36 +44,38 @@ const About = () => {
             </p>
           </div>
           {/* Skill section  */}
-          <div className=" about-skills flex flex-col gap-5 text-xl">
+          <div className=" about-skills flex flex-col gap-5 text-base sm:text-lg md:text-xl">
             <div>
               <strong>HTML & CSS</strong>
-              <hr style={{ width: "70%" }} />
+              <hr className="h-full" style={{ width: "70%" }} />
             </div>
             <div>
               <strong>Bootstrap</strong>
-              <hr style={{ width: "75%" }} />
+              <hr className="h-full" style={{ width: "75%" }} />
             </div>
             <div>
               <strong>Material UI</strong>
-              <hr style={{ width: "78%" }} />
+              <hr className="h-full" style={{ width: "78%" }} />
             </div>
             <div>
               <strong>Tailwind CSS</strong>
-              <hr style={{ width: "80%" }} />
+              <hr className="h-full" style={{ width: "80%" }} />
             </div>
             <div>
               <strong>Java Script</strong>
-              <hr style={{ width: "60%" }} />
+              <hr className="h-full" style={{ width: "60%" }} />
             </div>
             <div>
               <strong>React JS</strong>
-              <hr style={{ width: "70%" }} />
+              <hr className="h-full" style={{ width: "70%" }} />
             </div>
             <div>
               <strong>Axios</strong>
-              <hr style={{ width: "30%" }} />
+              <hr className="h-full" style={{ width: "30%" }} />
             </div>
           </div>
+         
+
         </div>
       </div>
     </div>
