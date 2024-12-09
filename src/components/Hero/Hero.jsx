@@ -47,26 +47,26 @@ const Hero = () => {
         
         />
         <div className="flex flex-col items-center">
-          <h1 className="lg:text-5xl md:text-3xl sm:text-2xl text-2xl font-bold text-center w-[95%] dark:text-white text-black  ">
+          <h1 className="lg:text-5xl md:text-3xl text-3xl font-bold text-center w-[95%] dark:text-white text-black  ">
             <span className="bg-gradient-to-r from-[#b923e1] to-[#da7c25] text-transparent bg-clip-text">
               I'm Muhammad Azeem,
             </span>{" "}
             {displayText}    
           </h1>
-          <h1 className="lg:text-5xl md:text-3xl sm:text-2xl text-2xl font-bold text-center py-3 w-[80%] dark:text-white text-black ">
+          <h1 className="lg:text-5xl md:text-3xl text-xl font-bold text-center py-3 w-[90%] dark:text-white text-black ">
             developer based in Pakistan.
           </h1>
-          <p className="lg:text-xl md:text-base sm:text-base  sm:w-[60%] w-[80%] text-center leading-relaxed dark:text-gray-300 text-black">
+          <p className="lg:text-xl md:text-base text-sm  sm:w-[60%] w-[90%] text-center pt-4 sm:pt-0 leading-relaxed dark:text-gray-300 text-black">
             I am a Frontend developer from Islamabad, Pakistan with a year of
             experience in multiple companies like trainee at FIT Computers and
             WSM Solutions.
           </p>
         </div>
-        <div className="btn gap-6 pt-4 flex justify-center items-center">
-          <div onClick={()=>{scrollToSection('contact')}} className="connect-btn hover:scale-105 duration-300 ">
+        <div className="btn gap-6 pt-10 sm:pt-6 flex justify-center items-center">
+          <div onClick={()=>{scrollToSection('contact')}} className="connect-btn sm:px-7 px-5 py-3 sm:text-base text-xs hover:scale-105 duration-300 ">
             Get In Touch
           </div>
-          <div className="resume-btn hover:scale-105 duration-300 hover:border-purple-600 dark:border-white  border-black rounded-full border-solid border-[2px] text-black dark:text-white">
+          <div className="resume-btn sm:px-7 px-5 py-3 sm:text-base text-xs hover:scale-105 duration-300 hover:border-purple-600 dark:border-white  border-black rounded-full border-solid border-[2px] text-black dark:text-white">
             My resume
           </div>
         </div>
