@@ -7,7 +7,7 @@ const About = () => {
     <div id="about" className=" flex flex-col justify-center items-center gap-8 px-36 py-12">
       {/* Title of about section */}
       <div className="relative">
-        <h1 className="text-6xl font-semibold px-8">About me</h1>
+        <h1 className=" text-6xl font-semibold px-8 ">About me</h1>
         <img
           className="absolute bottom-0 right-0 -z-10 w-40"
           src="assets/theme_pattern.svg"

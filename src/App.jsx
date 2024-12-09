@@ -21,7 +21,7 @@ const App = () => {
   
   
   return (
-    <div className='dark:bg-[#161513] bg-white'>
+    <div className='-z-10'>
       
       <Navbar/>
       <Hero />

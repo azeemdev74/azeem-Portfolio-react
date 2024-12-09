@@ -38,7 +38,7 @@ const Hero = () => {
   }, [displayText, nameIndex, isDeleting]);
 
   return (
-    <div id="home" className="relative">
+    <div id="home" className="relative ">
       <div className="flex flex-col items-center gap-3 pt-20">
         <img
           className="mt-5"
@@ -51,12 +51,12 @@ const Hero = () => {
             <span className="bg-gradient-to-r from-[#b923e1] to-[#da7c25] text-transparent bg-clip-text">
               I'm Muhammad Azeem,
             </span>{" "}
-            {displayText}   
+            {displayText}    
           </h1>
-          <h1 className="text-5xl font-bold text-center py-3 w-[70%]  ">
+          <h1 className="text-5xl font-bold text-center py-3 w-[70%] dark:text-white text-black ">
             developer based in Pakistan.
           </h1>
-          <p className="text-xl w-[60%] text-center leading-relaxed text-gray-300">
+          <p className="text-xl w-[60%] text-center leading-relaxed dark:text-gray-300 text-black">
             I am a Frontend developer from Islamabad, Pakistan with a year of
             experience in multiple companies like trainee at FIT Computers and
             WSM Solutions.
@@ -66,13 +66,13 @@ const Hero = () => {
           <div onClick={()=>{scrollToSection('contact')}} className="connect-btn hover:scale-105 duration-300 ">
             Get In Touch
           </div>
-          <div className="resume-btn hover:scale-105 duration-300 hover:border-purple-600 ">
+          <div className="resume-btn hover:scale-105 duration-300 hover:border-purple-600 dark:border-white  border-black rounded-full border-solid border-[2px] text-black dark:text-white">
             My resume
           </div>
         </div>
       </div>
       {/* // Social icons // */}
-      <div className="Social-icons flex flex-col gap-y-8 absolute top-96 right-12  ">
+      <div className="Social-icons flex flex-col gap-y-8 absolute top-96 right-12 text-black dark:text-white ">
         <strong className="fab fa-linkedin"></strong>
         <strong className="	fas fa-envelope"></strong>
         <strong className="fab fa-github "></strong>

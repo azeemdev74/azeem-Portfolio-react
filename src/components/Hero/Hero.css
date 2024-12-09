@@ -19,8 +19,8 @@
 
 .resume-btn {
   padding: 13px 30px;
-  border: 2px white solid;
-  border-radius: 40px;
+  /* border: 2px white solid;
+  border-radius: 40px; */
   cursor: pointer;
   font-size: 18px;
 }

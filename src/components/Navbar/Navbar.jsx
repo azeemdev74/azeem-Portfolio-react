@@ -100,7 +100,7 @@ const [theme, setTheme] = useState(false);
       </ul>
       <div onClick={()=>{{scrollToSection('contact')
         setMenu('contact')
-      }}} className="nav-connect ">
+      }}} className="nav-connect text-white">
         Connect With Me
       </div>
       <div className=' text-2xl '>
