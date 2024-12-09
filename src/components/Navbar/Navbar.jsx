@@ -54,8 +54,7 @@ const [theme, setTheme] = useState(false);
       } else {
         document.documentElement.classList.remove("dark");
       }
-    }
-  }, [theme]);
+    }},[theme]);
 
  
 
@@ -71,7 +70,7 @@ const [theme, setTheme] = useState(false);
 // }
 
   return (
-    <div className='flex justify-between items-center px-12 py-3 fixed mx-auto w-full dark:bg-[#161513] text-black dark:text-white bg-white z-10'>
+    <div className='flex  justify-between items-center px-12 py-3 fixed mx-auto w-full dark:bg-[#161513] text-black dark:text-white bg-white z-10'>
        {/* <div className="relative">
         <h1 className="text-4xl font-semibold px-8">Azeem</h1>
         <img
@@ -80,8 +79,8 @@ const [theme, setTheme] = useState(false);
           alt="theme_pattern"
         />
       </div> */}
-      <img src="assets/logo.svg" alt="website-logo" style={{height:'7%', width:'8%'}} />
-      <ul className='nav-menu'>
+            <img src={theme==='dark'?"assets/logo.svg":'assets/dark_logo.svg'} alt="website-logo" className=' sm:w-[15%] lg:w-[8%] md:[25%] ' />
+      <ul className='nav-menu md:flex hidden'>
         <li onClick={()=>{scrollToSection('home')
           setMenu('home')
         }} className='cursor-pointer flex flex-col'>Home{menu==='home'?<img className='flex m-auto' src='assets/nav_underline.svg' alt='underline' />:<></>}</li>
@@ -98,16 +97,29 @@ const [theme, setTheme] = useState(false);
           setMenu('contact')
         }} className='cursor-pointer flex flex-col'>Contact{menu==='contact'?<img className='flex m-auto' src='assets/nav_underline.svg' alt='underline' />:<></>}</li>
       </ul>
-      <div onClick={()=>{{scrollToSection('contact')
+      {/* <div onClick={()=>{{scrollToSection('contact')
         setMenu('contact')
       }}} className="nav-connect text-white">
         Connect With Me
-      </div>
-      <div className=' text-2xl '>
+      </div> */}
+      <div className=' text-2xl flex gap-x-3 items-center'>
        {theme==='light' ?<i onClick={()=>setTheme('dark')} className='fa fa-moon cursor-pointer'></i>:
        <i onClick={()=>setTheme('light')} className='fa fa-sun cursor-pointer'></i>}
-        
-        
+      
+        <div class="dropdown cursor-pointer md:hidden inline-block ">
+  <span><i className="fa fa-bars">
+
+</i></span>
+  <div class="dropdown-content dark:border-2 dark:border-gray-700 text-black dark:text-white">
+   <ul className='text-base flex flex-col  '>
+    <li onClick={()=>{scrollToSection('home')}} className='hover:bg-gray-700 py-1 px-4'>Home</li>
+    <li onClick={()=>{scrollToSection('about')}} className='hover:bg-gray-700 py-1 px-4'>About me</li>
+    <li onClick={()=>{scrollToSection('service')}} className='hover:bg-gray-700 py-1 px-4'>Services</li>
+    <li onClick={()=>{scrollToSection('portfolio')}} className='hover:bg-gray-700 py-1 px-4'>Portfolio</li>
+    <li onClick={()=>{scrollToSection('contact')}} className='hover:bg-gray-700 py-1 px-4'>Contact</li>
+   </ul>
+  </div>
+</div>
       </div>
     </div>
   )

@@ -41,22 +41,22 @@ const Hero = () => {
     <div id="home" className="relative ">
       <div className="flex flex-col items-center gap-3 pt-20">
         <img
-          className="mt-5"
+          className="mt-5 sm:w-[20%] w-[40%]  "
           src="assets/profile.png"
           alt="Profile Image"
-          style={{ height: "20%", width: "20%" }}
+        
         />
         <div className="flex flex-col items-center">
-          <h1 className="text-5xl font-bold text-center w-[70%]  ">
+          <h1 className="lg:text-5xl md:text-3xl sm:text-2xl text-2xl font-bold text-center w-[95%] dark:text-white text-black  ">
             <span className="bg-gradient-to-r from-[#b923e1] to-[#da7c25] text-transparent bg-clip-text">
               I'm Muhammad Azeem,
             </span>{" "}
             {displayText}    
           </h1>
-          <h1 className="text-5xl font-bold text-center py-3 w-[70%] dark:text-white text-black ">
+          <h1 className="lg:text-5xl md:text-3xl sm:text-2xl text-2xl font-bold text-center py-3 w-[80%] dark:text-white text-black ">
             developer based in Pakistan.
           </h1>
-          <p className="text-xl w-[60%] text-center leading-relaxed dark:text-gray-300 text-black">
+          <p className="lg:text-xl md:text-base sm:text-base  sm:w-[60%] w-[80%] text-center leading-relaxed dark:text-gray-300 text-black">
             I am a Frontend developer from Islamabad, Pakistan with a year of
             experience in multiple companies like trainee at FIT Computers and
             WSM Solutions.
@@ -72,7 +72,7 @@ const Hero = () => {
         </div>
       </div>
       {/* // Social icons // */}
-      <div className="Social-icons flex flex-col gap-y-8 absolute top-96 right-12 text-black dark:text-white ">
+      <div className="Social-icons hidden md:flex flex-col gap-y-8 absolute top-96 right-12 text-black dark:text-white ">
         <strong className="fab fa-linkedin"></strong>
         <strong className="	fas fa-envelope"></strong>
         <strong className="fab fa-github "></strong>
