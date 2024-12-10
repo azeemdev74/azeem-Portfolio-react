@@ -21,7 +21,7 @@ const Navbar = () => {
 
   
 // }, [darkMode])
-const [theme, setTheme] = useState(false);
+const [theme, setTheme] = useState('dark');
   useEffect(() => {
     const setSystemTheme = () => {
       if (theme === "default") {
@@ -70,7 +70,7 @@ const [theme, setTheme] = useState(false);
 // }
 
   return (
-    <div className='flex  justify-between items-center px-12 py-3 fixed mx-auto w-full dark:bg-[#161513] text-black dark:text-white bg-white z-10'>
+    <div className='flex  justify-between items-center px-12 py-3 fixed  mx-auto w-full dark:bg-[#161513] text-black dark:text-white bg-white z-10'>
        {/* <div className="relative">
         <h1 className="text-4xl font-semibold px-8">Azeem</h1>
         <img

@@ -21,7 +21,7 @@ const App = () => {
   
   
   return (
-    <div className='-z-10 overflow-x-hidden'>
+    <div className='-z-10 overflow-x-hidden relative'>
       
       <Navbar/>
       <Hero />

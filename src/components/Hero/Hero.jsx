@@ -47,17 +47,17 @@ const Hero = () => {
         
         />
         <div className="flex flex-col items-center">
-          <h1 className=" flex justify-center flex-col sm:flex-row lg:text-5xl md:text-3xl text-3xl font-bold text-center w-[95%] dark:text-white text-black  ">
+          <h1 className=" flex justify-center flex-col sm:flex-row gap-x-2 lg:text-5xl md:text-3xl text-3xl font-bold text-center w-[95%] dark:text-white text-black  ">
             <span className="bg-gradient-to-r from-[#b923e1] to-[#da7c25] text-transparent bg-clip-text">
-              I'm Muhammad Azeem,
+              I'm Muhammad  Azeem,
             </span> {" "} 
-            <span className="sm:block hidden">{displayText} </span>
+            <span className="sm:block hidden "> {displayText} </span>
             
           </h1>
-          <h1 className="sm:hidden block h-[8vh]  lg:text-5xl md:text-3xl text-3xl font-bold text-center w-[95%] dark:text-white text-black  ">
+          <h1 className="sm:hidden block h-[8vh] lg:text-5xl md:text-3xl text-3xl font-bold text-center w-[95%] dark:text-white text-black tracking-wider ">
          {displayText}
           </h1>
-          <h1 className="lg:text-5xl md:text-3xl text-xl font-bold text-center py-3 w-[90%] dark:text-white text-black ">
+          <h1 className="lg:text-5xl md:text-3xl text-2xl font-bold text-center py-2 sm:py-3 w-[90%] dark:text-white text-black ">
             developer based in Pakistan.
           </h1>
           <p className="lg:text-xl md:text-base text-sm  sm:w-[60%] w-[90%] text-center pt-4 sm:pt-0 leading-relaxed dark:text-gray-300 text-black">
