@@ -14,7 +14,7 @@
 .about-skills div hr {
   outline: none;
   border: none;
-  width: 50%;
+  /* width: 85%; */
   height: 8px;
   border-radius: 50px;
   background: linear-gradient(264deg, #df8908 -5.09%, #b515ff 106.28%);

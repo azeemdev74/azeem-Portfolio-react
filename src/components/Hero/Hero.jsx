@@ -82,6 +82,7 @@ const Hero = () => {
         <strong className="fab fa-github "></strong>
         <strong className="fab fa-facebook"></strong>
       </div>
+     
     </div>
   );
 };
