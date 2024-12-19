@@ -90,10 +90,10 @@ const Contact = () => {
 
         {/* Contact section right side */}
 
-        <div className="contact-right  px-5 sm:px-0">
+        <div className="contact-right">
           <form className='contact-form flex flex-col justify-center items-start gap-4 sm:gap-6' onSubmit={onSubmit}>
             <label className='text-sm sm:text-base ' >Your name</label>
-            <input className='w-full py-3 sm:p-4 border border-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500' name='Name' type="text" placeholder='Enter your name' required/>
+            <input className='w-full p-3 sm:p-4 border border-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500' name='Name' type="text" placeholder='Enter your name' required/>
             <label  className='text-sm sm:text-base '>Your Email</label>
             <input className='w-full p-3 sm:p-4 border border-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500' name='Email' type="email" placeholder='Enter your mail' required/>
             <label className='text-sm sm:text-base ' >Write your message here</label>
