@@ -61,28 +61,28 @@ const Contact = () => {
     }
     };
   return (
-    <div id='contact' className='contact-section flex flex-col justify-center items-center gap-20 mx-44 my-20'>
+    <div id='contact' className='contact-section flex flex-col justify-center items-center gap-8 sm:px-36 px-0 sm;py-12 py-4 '>
         {/* // heading of contact section // */}
 
       <div className="relative">
-        <h1 className="text-6xl font-semibold px-8">Get In Touch</h1>
+        <h1 className="lg:text-6xl md:4xl sm:3xl text-4xl font-semibold px-10">Get In Touch</h1>
         <img
-          className="absolute bottom-0 right-0 top-3 -z-10 w-40"
+          className="absolute bottom-0 right-0 -z-10 sm:w-40 w-24 mr-2 sm:mr-0"
           src="assets/theme_pattern.svg"
           alt="theme_pattern"
         />
       </div>
       {/* data of contact section  */}
-    <div className='flex gap-80 '>
+    <div className='grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 lg:gap-28 px-4 sm:px-8 lg:mx-36 py-10'>
         {/* // left side of contact us section // */}
-        <div className="contact-left flex flex-col gap-7">
-            <h6 className='text-5xl font-bold '>Let's Talk</h6>
-            <small className='text-lg leading-[30px] max-w-lg text-gray-300 '>I'm currently avaliable to take on new projects, so feel free to send me a message about anything that you want me to work on. You can contact anytime.</small>
+        <div className="contact-left flex flex-col gap-6 md:gap-8">
+            <h6 className='text-3xl sm:text-4xl lg:text-5xl font-bold'>Let's Talk</h6>
+            <small className='text-base sm:text-lg leading-6 sm:leading-8 max-w-full md:max-w-lg text-gray-300 '>I'm currently avaliable to take on new projects, so feel free to send me a message about anything that you want me to work on. You can contact anytime.</small>
            {
             details.map((val)=>
                 <div className='flex gap-4 items-center'>
-                <img className='w-6' src={val.d_icon} alt="icons-name" />
-                <span className='text-sm'>{val.d_title}</span>
+                <img className='sm:w-6 w-5' src={val.d_icon} alt="icons-name" />
+                <span className='text-sm sm:text-base text-gray-400'>{val.d_title}</span>
             </div>
             )
            }
@@ -90,14 +90,14 @@ const Contact = () => {
 
         {/* Contact section right side */}
 
-        <div className="contact-right">
-          <form className='contact-form flex flex-col justify-center items-start' onSubmit={onSubmit}>
-            <label >Your name</label>
-            <input name='Name' type="text" placeholder='Enter your name' required/>
-            <label >Your Email</label>
-            <input name='Email' type="email" placeholder='Enter your mail' required/>
-            <label >Write your message here</label>
-            <textarea name="Message" rows='8' placeholder='Enter your message' required>
+        <div className="contact-right  px-5 sm:px-0">
+          <form className='contact-form flex flex-col justify-center items-start gap-4 sm:gap-6' onSubmit={onSubmit}>
+            <label className='text-sm sm:text-base ' >Your name</label>
+            <input className='w-full py-3 sm:p-4 border border-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500' name='Name' type="text" placeholder='Enter your name' required/>
+            <label  className='text-sm sm:text-base '>Your Email</label>
+            <input className='w-full p-3 sm:p-4 border border-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500' name='Email' type="email" placeholder='Enter your mail' required/>
+            <label className='text-sm sm:text-base ' >Write your message here</label>
+            <textarea className='w-full p-4 text-base sm:text-lg border border-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500' name="Message" rows='8' placeholder='Enter your message' required>
             </textarea>
             <button type='submit' disabled={loading} className='text-lg px-6 py-3 mt-4 cursor-pointer rounded-full'>
              {
